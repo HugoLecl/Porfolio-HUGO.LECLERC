@@ -1,29 +1,31 @@
-// Fonction pour smooth scrolling
+// Fonction pour activer le défilement fluide (smooth scrolling)
 document.querySelectorAll('.navigation a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const targetSection = document.querySelector(this.getAttribute('href'));
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
     });
 });
 
 // Highlight the active section in navigation on scroll
 document.addEventListener('scroll', () => {
-    let sections = document.querySelectorAll('main section');
-    let scrollY = window.pageYOffset;
+    const sections = document.querySelectorAll('main section');
+    const scrollY = window.scrollY;
 
     sections.forEach(section => {
-        let sectionTop = section.offsetTop - 50; // Offset pour ajuster la sensibilité
-        let sectionHeight = section.clientHeight;
+        const sectionTop = section.offsetTop - 60; // Ajustement de l'offset
+        const sectionHeight = section.offsetHeight;
 
+        const navLink = document.querySelector(`.navigation a[href="#${section.id}"]`);
         if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-            let id = section.getAttribute('id');
-            document.querySelector('.navigation a[href="#' + id + '"]').classList.add('active');
+            navLink?.classList.add('active');
         } else {
-            let id = section.getAttribute('id');
-            document.querySelector('.navigation a[href="#' + id + '"]').classList.remove('active');
+            navLink?.classList.remove('active');
         }
     });
 });
-
