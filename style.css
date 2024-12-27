@@ -61,6 +61,12 @@ header {
     border-radius: 5px;
 }
 
+.navigation a.active {
+    background-color: #575757;
+    color: #fff;
+    border-radius: 5px;
+}
+
 /* Conteneur pour les drapeaux */
 .flags-container {
     display: flex;
@@ -97,4 +103,12 @@ header {
 .interactive-button:hover {
     background-color: #27408b;
     transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
