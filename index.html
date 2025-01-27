@@ -1,120 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio d'Emile Mansir</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Hugo Leclerc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <!-- En-tête avec nom et photo -->
-    <header>
-        <div class="header-content">
-            <div class="name">Emile Mansir</div>
-            <img src="https://image.noelshack.com/fichiers/2024/49/7/1733659945-img-0007.jpeg" alt="photo de profil" class="profile-pic">
+    <header class="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Photo de Hugo Leclerc" class="profile-photo">
+            <div class="hero-text">
+                <h1>Hugo Leclerc</h1>
+                <p>20 ans - Étudiant à l'ILEPS - Alternant chez Decathlon</p>
+                <p>Email: <a href="mailto:hugosommerard@gmail.com">hugosommerard@gmail.com</a> | Téléphone: <a href="tel:+0788345315">07 88 34 53 15</a></p>
+            </div>
         </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#langues">Langues</a></li>
+                <li><a href="#benevolat">Bénévolat</a></li>
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#interets">Centres d'intérêt</a></li>
+                <li><a href="#personnalite">Ma personnalité</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Section Introduction -->
-    <section class="introduction">
-      <a href="emilemansir.pdf" target="_blank">
-        <button class="cv">Télécharger mon CV</button>
-      </a>
-        <p>Étudiant en 3ème année de licence professionnelle commercialisation des produits et services sportifs.</p>
-        <p>Je suis passionné par le sport, en particulier par le football et le tennis. Je cherche à développer mes compétences en marketing et communication dans l'univers sportif.</p>
-    </section>
-
-    <!-- Section Compétences -->
-    <section id="skills" class="section">
-        <h2>Compétences</h2><br>
-        <p>En tant qu'étudiant en marketing sportif, j'ai acquis plusieurs compétences qui me permettent d'appréhender les enjeux de ce secteur dynamique.</p>
-        <ul>
-            <li><strong>Marketing Sportif :</strong> Élaboration de stratégies marketing pour promouvoir des produits et services sportifs.</li>
-            <li><strong>Communication Digitale :</strong> Gestion des réseaux sociaux, création de contenu et campagnes de communication en ligne.</li>
-            <li><strong>Gestion de Projets :</strong> Planification, coordination et suivi de projets pour atteindre des objectifs commerciaux.</li>
-            <li><strong>Réseaux Sociaux :</strong> Gestion des communautés, création de contenu engageant et analyse des performances sur diverses plateformes.</li>
-            <li><strong>Analyse de Marché :</strong> Études de marché pour comprendre les tendances et les besoins des consommateurs dans le domaine du sport.</li>
-            <li><strong>Gestion de la Relation Client :</strong> Stratégies pour fidéliser les clients et améliorer l’expérience utilisateur dans les secteurs du sport et du bien-être.</li>
-        </ul>
-    </section>
-
-    <!-- Section Expériences Professionnelles -->
-    <section id="experience" class="section">
-        <h2>Expériences Professionnelles</h2><br>
-        <p>Voici un aperçu de mes expériences professionnelles et stages qui m'ont permis de développer mes compétences dans le domaine du sport, du marketing et de la communication.</p>
-        <ul>
-            <li>
-                <strong>Alternant Responsable accueil, Chargé de Communication & Marketing</strong><br>
-                <em>La Kerner Team (Salle de sports de combats) - Paris 18ème</em> <br>
-                <span>2023 - présent</span>
-                <p>Je gère l'accueil des clients, la communication sur les réseaux sociaux, les commandes de matériel et je fais le lien avec les fédérations. Cette expérience m'a permis de comprendre l'importance de la relation client dans un secteur sportif spécialisé.</p>
-            </li>
-            <li>
-                <strong>Vendeur/Conseiller Sportif</strong><br>
-                <em>Decathlon - Rosny sous bois</em><br>
-                <span>2023 (Stage)</span>
-                <p>Lors de mon stage chez Decathlon, j'ai conseillé les clients sur les produits, géré l'espace de vente, et effectué diverses tâches liées à la gestion des stocks. Cette expérience m'a permis de comprendre le côté opérationnel du commerce et du marketing sportif.Cependant, c'est resté une expérience mitigée : le travail ne me passionnait pas, et cela m'a poussé à chercher autre chose pour mon alternance.</p>
-            </li>
-            <li>
-                <strong>Vendeur, conseiller sportif</strong><br>
-                <em>Decathlon - Bry sur Marne</em><br>
-                <span>2022 (Stage)</span>
-                <p>Durant ce premier stage, j'ai découvert le travail de vendeur au sein d'un grand magasin de retail. Cela m'a appri à parler avec aisance aux clients, mais j'ai aussi découvert le métier de vendeur.</p>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Section Formation -->
-    <section id="education" class="section">
-        <h2>Formation</h2><br>
-        <p>Ma formation académique m'a permis d'acquérir des bases solides en marketing sportif et en gestion d'entreprise, tout en mettant en pratique mes connaissances dans des stages et des projets concrets.</p>
-        <ul>
-            <li>
-                <strong>Licence Professionnelle Commercialisation des Produits et Services Sportifs</strong><br>
-                <em>ILEPS - Cergy (95)</em><br>
-                <span>2022 - présent</span>
-                <p>Cette formation en alternance combine enseignements théoriques en marketing et communication dans le secteur sportif, et expérience professionnelle concrète au sein d'entreprises partenaires.</p>
-            </li>
-            <li>
-                <strong>Baccalauréat STMG (Sciences et Technologies du Management et de la Gestion)</strong><br>
-                <em>Lycée Charles Peguy - Paris 11ème</em><br>
-                <span>2022 (Mention Bien)</span>
-                <p>Ce baccalauréat m'a permis d'acquérir une solide base en gestion, management et communication, des compétences qui sont essentielles pour évoluer dans le secteur du marketing et du sport.</p>
-            </li>
-            <li>
-                <strong>Sport-Études Tennis</strong><br>
-                <em>École privée - Paris</em><br>
-                <span>2017 - 2020</span>
-                <p>J'ai suivi un programme de sport-études en parallèle de ma scolarité, en me consacrant au tennis de haut niveau. Cette expérience m'a appris la discipline, la gestion du temps, et la persévérance.</p>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Section Langues -->
-    <section id="languages" class="section">
-        <h2>Langues</h2><br>
-        <ul>
-            <li><strong>Français :</strong> Langue maternelle</li>
-            <li><strong>Anglais :</strong> Courant (TOEIC 850 points)</li>
-        </ul>
-    </section>
-
-    <!-- Section Centres d'intérêt -->
-    <section id="interests" class="section">
-        <h2>Centres d'intérêt</h2><br>
-        <p>Je suis un passionné de sport, notamment de football et de tennis. Ces passions m'ont guidé dans mon choix de carrière, et je cherche à m'épanouir dans un environnement lié à ces activités. Voici quelques-uns de mes centres d'intérêt :</p>
-        <ul>
-            <li><strong>Football :</strong> Je suis un fan assidu de la Ligue 1, premier league et autres championnats et compétitions comme la league des champions, ou encore les compétitions internationales. Je pratique le football dands le cadre loisir, après avoir été en club plus jeune, j'ai fini par choisir le tennis, que j'ai notamment pratiqué en sport études.</li>
-            <li><strong>Tennis :</strong> Ancien joueur de tennis en compétition, je suis passionné par ce sport et je suis toujours les grands tournois.</li>
-            <li><strong>Voyages :</strong> J'aime découvrir de nouvelles cultures, ce qui m'aide à m'ouvrir à de nouvelles idées et à enrichir mes expériences personnelles et professionnelles.</li>
-        </ul>
-    </section>
-
+    <main>
+        <section id="biographie" class="section">
+            <h2>Biographie</h2>
+            <p>
+                Actuellement alternant chez Decathlon au poste de vendeur polyvalent, je suis passionné par le sport et le dépassement de soi.
+                J'ai participé à divers projets axés sur l'amélioration du parcours client, l'encartage et l'organisation des rayons.
+                Mon objectif à long terme est de devenir responsable d'un magasin Decathlon après avoir obtenu mon Master.
+            </p>
+        </section>
+        <section id="competences" class="section">
+            <h2>Compétences</h2>
+            <div class="skills-grid">
+                <span>Canva</span>
+                <span>PowerPoint</span>
+                <span>Excel</span>
+                <span>CapCut</span>
+                <span>Brevo</span>
+                <span>Word</span>
+            </div>
+        </section>
+        <section id="langues" class="section">
+            <h2>Langues</h2>
+            <ul class="language-list">
+                <li>Français (langue maternelle)</li>
+                <li>Anglais (B1-B2)</li>
+                <li>Espagnol (Débutant)</li>
+            </ul>
+            <div class="flags">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="Drapeau français">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom_%283-5%29.svg" alt="Drapeau britannique">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Drapeau espagnol">
+            </div>
+        </section>
+        <section id="benevolat" class="section">
+            <h2>Bénévolat</h2>
+            <ul>
+                <li>Enseignement de cours de tennis à des enfants de 6-10 ans (2018-2020).</li>
+                <li>Bénévolat aux Restos du Cœur (2019).</li>
+            </ul>
+        </section>
+        <section id="formations" class="section">
+            <h2>Formations</h2>
+            <ul>
+                <li>Baccalauréat (2020)</li>
+                <li>BAFA (2024)</li>
+                <li>PSC1 (2022)</li>
+                <li>DEUST (2024)</li>
+            </ul>
+        </section>
+        <section id="interets" class="section">
+            <h2>Centres d'intérêt</h2>
+            <ul>
+                <li>Voyages</li>
+                <li>Musculation</li>
+                <li>Musique</li>
+                <li>Montages vidéo</li>
+                <li>Restaurants</li>
+            </ul>
+        </section>
+        <section id="personnalite" class="section">
+            <h2>Ma personnalité</h2>
+            <p>
+                Dynamique, curieux et déterminé, j'aime relever de nouveaux défis et travailler en équipe pour atteindre des objectifs communs.
+                Je valorise l'entraide et le partage de mes connaissances, que ce soit dans un cadre professionnel ou personnel.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Portfolio - Hugo Leclerc</p>
+    </footer>
     <script src="script.js"></script>
 </body>
-
 </html>
