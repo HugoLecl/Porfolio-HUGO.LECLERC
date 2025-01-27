@@ -1,0 +1,201 @@
+/* Importation des polices Google */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:ital,wght@1,600&family=Roboto+Slab:wght@400;700&display=swap');
+
+body {
+    background-color: #F4F9FF; /* Fond bleu très clair */
+    color: #333333; /* Texte foncé */
+    font-family: 'Nunito', sans-serif; /* Police propre et lisible */
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête : nom et photo centrés */
+header {
+    display: flex;
+    flex-direction: column; /* Aligne verticalement */
+    justify-content: center;
+    align-items: center; /* Centre le contenu horizontalement */
+    background-color: #0097B2; /* Bleu pétrole */
+    color: white; /* Texte blanc */
+    padding: 40px 20px; /* Espace autour du contenu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+header .name {
+    font-family: 'Playfair Display', serif; /* Titre élégant */
+    font-size: 3.5rem; /* Taille légèrement réduite pour un rendu harmonieux */
+    font-weight: 600;
+    margin: 20px 0; /* Espacement entre le titre et l'image */
+    text-align: center; /* Centrage du texte */
+}
+
+header .profile-pic {
+    width: 250px;              /* Augmentation de la taille de l'image */
+    height: 250px;             /* Taille plus grande */
+    border: 5px solid white;   /* Bordure blanche autour de l'image */
+    border-radius: 50%;        /* Image arrondie */
+    object-fit: cover;         /* Ajuste l'image sans déformation */
+    display: block;            /* Permet à l'image de se comporter comme un bloc */
+    margin: 20px auto;         /* Centre l'image horizontalement avec une marge auto */
+}
+
+
+
+/* Style pour les titres */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #0097B2;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style de l'introduction */
+.introduction {
+    text-align: center; /* Centré */
+    font-family: 'Roboto Slab', serif; /* Police élégante et lisible */
+    font-size: 1.2rem; /* Taille du texte */
+    line-height: 1.8; /* Hauteur de ligne confortable */
+    color: #333333; /* Couleur du texte */
+    max-width: 800px; /* Limite la largeur de la section */
+    margin: 40px auto; /* Centré avec marges */
+    padding: 20px;
+    background-color: #FFFFFF; /* Fond blanc */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.introduction p {
+    margin-bottom: 20px; /* Espacement entre les paragraphes */
+}
+
+/* Style des sections */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    color: #333333;
+    margin: 20px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0097B2;
+}
+
+.section .left, .section .right {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.section .left {
+    border-right: 3px solid #F6A5C0;
+}
+
+.section .right {
+    border-left: 3px solid #FFD166;
+}
+
+/* Style des blocs rose pâle */
+.section-rose {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F6A5C0;
+    color: #333333;
+    margin: 20px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #EF476F;
+}
+
+.section-rose .left, .section-rose .right {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.section-rose .left {
+    border-right: 3px solid #FFD166;
+}
+
+.section-rose .right {
+    border-left: 3px solid #118AB2;
+}
+
+/* Style des boutons */
+button, a.button {
+    background-color: #0097B2;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+button:hover, a.button:hover {
+    background-color: #EF476F;
+    transform: scale(1.1);
+}
+
+/* Style des paragraphes */
+p {
+    margin: 15px 0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #444444;
+}
+
+/* Style général pour les liens */
+a {
+    color: #0097B2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Conteneur pour l'organisation globale */
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Responsive Design pour les petits écrans */
+@media (max-width: 768px) {
+    .section, .section-rose {
+        flex-direction: column;
+    }
+    .section .left, .section .right, 
+    .section-rose .left, .section-rose .right {
+        border: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .name {
+        margin: 10px 0;
+        font-size: 2rem;
+    }
+
+    header .profile-pic {
+        margin: 10px 0;
+    }
+
+    .introduction {
+        width: 90%;
+        padding: 15px;
+    }
+}
