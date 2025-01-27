@@ -4,31 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Hugo Leclerc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        a {
-            color: white;
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="profile-photo-container">
-                <!-- Remplacez 'votre-image.jpg' par le chemin de votre image -->
-                <img src="profile.jpg" alt="Photo de Hugo Leclerc" class="profile-photo">
-            </div>
-            <div class="contact-info">
+    <header class="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Photo de Hugo Leclerc" class="profile-photo">
+            <div class="hero-text">
                 <h1>Hugo Leclerc</h1>
-                <p>20 ans - École de commerce ILEPS - Alternant chez Decathlon</p>
-                <p>
-                    Email: <a href="mailto:hugosommerard@gmail.com">hugosommerard@gmail.com</a> | 
-                    Téléphone: <a href="tel:+0788345315">07 88 34 53 15</a>
-                </p>
+                <p>20 ans - Étudiant à l'ILEPS - Alternant chez Decathlon</p>
+                <p>Email: <a href="mailto:hugosommerard@gmail.com">hugosommerard@gmail.com</a> | Téléphone: <a href="tel:+0788345315">07 88 34 53 15</a></p>
             </div>
         </div>
-        <nav class="navigation">
+        <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="#biographie">Biographie</a></li>
                 <li><a href="#competences">Compétences</a></li>
@@ -41,7 +30,7 @@
         </nav>
     </header>
     <main>
-        <section id="biographie">
+        <section id="biographie" class="section">
             <h2>Biographie</h2>
             <p>
                 Actuellement alternant chez Decathlon au poste de vendeur polyvalent, je suis passionné par le sport et le dépassement de soi.
@@ -49,57 +38,57 @@
                 Mon objectif à long terme est de devenir responsable d'un magasin Decathlon après avoir obtenu mon Master.
             </p>
         </section>
-        <section id="competences">
+        <section id="competences" class="section">
             <h2>Compétences</h2>
-            <ul class="interactive-section">
-                <li><button class="interactive-button">Canva</button></li>
-                <li><button class="interactive-button">PowerPoint</button></li>
-                <li><button class="interactive-button">Excel</button></li>
-                <li><button class="interactive-button">CapCut</button></li>
-                <li><button class="interactive-button">Brevo</button></li>
-                <li><button class="interactive-button">Word</button></li>
-            </ul>
-        </section>
-        <section id="langues">
-            <h2>Langues</h2>
-            <ul class="interactive-section">
-                <li><button class="interactive-button">Français (langue maternelle)</button></li>
-                <li><button class="interactive-button">Anglais (B1-B2)</button></li>
-                <li><button class="interactive-button">Espagnol (Débutant)</button></li>
-            </ul>
-            <div class="flags-container">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="Drapeau français" class="language-flag">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom_%283-5%29.svg" alt="Drapeau britannique" class="language-flag">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Drapeau espagnol" class="language-flag">
+            <div class="skills-grid">
+                <span>Canva</span>
+                <span>PowerPoint</span>
+                <span>Excel</span>
+                <span>CapCut</span>
+                <span>Brevo</span>
+                <span>Word</span>
             </div>
         </section>
-        <section id="benevolat">
+        <section id="langues" class="section">
+            <h2>Langues</h2>
+            <ul class="language-list">
+                <li>Français (langue maternelle)</li>
+                <li>Anglais (B1-B2)</li>
+                <li>Espagnol (Débutant)</li>
+            </ul>
+            <div class="flags">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="Drapeau français">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom_%283-5%29.svg" alt="Drapeau britannique">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Drapeau espagnol">
+            </div>
+        </section>
+        <section id="benevolat" class="section">
             <h2>Bénévolat</h2>
             <ul>
-                <li>Enseignement de cours de tennis à des enfants de 6-10 ans entre 2018 et 2020.</li>
-                <li>Participation à du bénévolat pour les Restos du Cœur en 2019.</li>
+                <li>Enseignement de cours de tennis à des enfants de 6-10 ans (2018-2020).</li>
+                <li>Bénévolat aux Restos du Cœur (2019).</li>
             </ul>
         </section>
-        <section id="formations">
+        <section id="formations" class="section">
             <h2>Formations</h2>
-            <ul class="interactive-section">
-                <li><button class="interactive-button">Baccalauréat (2020)</button></li>
-                <li><button class="interactive-button">BAFA (2024)</button></li>
-                <li><button class="interactive-button">PSC1 (2022)</button></li>
-                <li><button class="interactive-button">DEUST (2024)</button></li>
+            <ul>
+                <li>Baccalauréat (2020)</li>
+                <li>BAFA (2024)</li>
+                <li>PSC1 (2022)</li>
+                <li>DEUST (2024)</li>
             </ul>
         </section>
-        <section id="interets">
+        <section id="interets" class="section">
             <h2>Centres d'intérêt</h2>
-            <ul class="interactive-section">
-                <li><button class="interactive-button">Voyages</button></li>
-                <li><button class="interactive-button">Musculation</button></li>
-                <li><button class="interactive-button">Musique</button></li>
-                <li><button class="interactive-button">Montages vidéo</button></li>
-                <li><button class="interactive-button">Restaurants</button></li>
+            <ul>
+                <li>Voyages</li>
+                <li>Musculation</li>
+                <li>Musique</li>
+                <li>Montages vidéo</li>
+                <li>Restaurants</li>
             </ul>
         </section>
-        <section id="personnalite">
+        <section id="personnalite" class="section">
             <h2>Ma personnalité</h2>
             <p>
                 Dynamique, curieux et déterminé, j'aime relever de nouveaux défis et travailler en équipe pour atteindre des objectifs communs.
@@ -108,8 +97,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Portfolio Leclerc Hugo.</p>
+        <p>&copy; 2024 Portfolio - Hugo Leclerc</p>
     </footer>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
