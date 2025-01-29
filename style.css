@@ -4,37 +4,42 @@
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: #000000; /* Fond noir */
-    color: #ffffff; /* Police blanche */
+    background-color: black; /* Fond noir */
+    color: white; /* Texte en blanc */
 }
 
 /* Style pour les titres (compétences, expériences, etc.) */
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif; /* Appliquer Montserrat aux titres */
-    color: #4CAF50; /* Couleur verte claire pour les titres */
+    color: #4CAF50; /* Couleur des titres en vert clair */
     text-align: center;
     margin: 20px 0;
 }
 
-/* En-tête */
+/* Header */
 header {
-    background: linear-gradient(135deg, #0097B2, #1A73E8); /* Dégradé de bleu (peut être modifié selon préférence) */
+    background: linear-gradient(135deg, #0097B2, #1A73E8); /* Dégradé bleu */
     color: white;
-    display: flex; /* Flexbox pour aligner le contenu horizontalement */
-    justify-content: space-between; /* Espace entre le texte et la photo */
-    align-items: center; /* Alignement vertical centré */
+    text-align: center;
     padding: 50px 20px;
 }
 
-/* Contenu de l'en-tête (nom et photo) */
 header .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Aligner à gauche */
+    align-items: center;
     justify-content: center;
 }
 
-/* Titre principal */
+header .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
 header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
@@ -42,7 +47,6 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Paragraphe sous le titre principal */
 header p {
     font-family: 'Roboto Slab', serif;
     font-size: 1.2rem;
@@ -50,29 +54,12 @@ header p {
     margin-top: 10px;
 }
 
-/* Photo de profil avec fond */
-header .profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid white;
-    object-fit: cover;
-    margin-left: 20px; /* Espacement entre la photo et le texte */
-    background-image: url('Decathlonbackround.png'); /* Image de fond */
-    background-size: cover; /* L'image de fond couvre tout le cercle */
-    background-position: center; /* Centrer l'image de fond */
-    background-repeat: no-repeat; /* Empêcher la répétition de l'image */
-    position: relative; /* Nécessaire pour gérer l'image de fond dans le cercle */
-    z-index: -1; /* Placer l'image en arrière-plan */
-}
-
 /* Navbar */
 .navbar {
-    background-color: #4CAF50; /* Vert clair pour la navbar */
+    background-color: #0097B2;
     padding: 10px 0;
 }
 
-/* Liens du menu de navigation */
 .nav-links {
     list-style: none;
     display: flex;
@@ -95,23 +82,15 @@ header .profile-pic {
     text-decoration: underline;
 }
 
-/* Sections principales */
+/* Sections */
 .section {
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 1000px;
-    background-color: #222222; /* Fond des sections en gris foncé */
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-/* Titres des sections */
-.section h2 {
-    font-family: 'Playfair Display', serif;
-    color: #4CAF50; /* Vert clair pour les titres des sections */
-    font-size: 2rem;
-    margin-bottom: 20px;
 }
 
 /* Grille de compétences */
@@ -123,7 +102,7 @@ header .profile-pic {
 }
 
 .skills-grid span {
-    background-color: #4CAF50; /* Vert clair pour les compétences */
+    background-color: #4CAF50;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -145,7 +124,7 @@ header .profile-pic {
 
 /* Boutons */
 button, a.button {
-    background-color: #4CAF50; /* Vert clair pour les boutons */
+    background-color: #4CAF50; /* Vert clair */
     color: white;
     padding: 12px 25px;
     font-size: 16px;
@@ -155,47 +134,55 @@ button, a.button {
     transition: transform 0.3s ease, background-color 0.3s ease;
     margin-top: 20px;
     text-decoration: none;
+    margin-right: 15px; /* Espace entre les boutons */
 }
 
+/* Bouton Mon CV */
+button.cv {
+    background-color: #4CAF50; /* Vert clair */
+    border-radius: 30px; /* Forme arrondie */
+    border: 2px solid #4CAF50; /* Bordure verte */
+}
+
+/* Bouton Lettre de Motivation */
+button.motivation-letter {
+    background-color: #FF6F61; /* Rouge clair */
+    border-radius: 30px; /* Forme arrondie */
+    border: 2px solid #FF6F61; /* Bordure rouge clair */
+}
+
+/* Changement au survol des boutons */
 button:hover, a.button:hover {
-    background-color: #66BB6A; /* Vert clair plus lumineux au survol */
+    background-color: #66BB6A; /* Vert plus lumineux (pour Mon CV) */
     transform: scale(1.1);
 }
 
-/* Footer */
-footer {
-    background-color: #4CAF50; /* Vert clair pour le footer */
-    color: white;
-    padding: 20px;
-    text-align: center;
+button.motivation-letter:hover {
+    background-color: #FF8A7D; /* Rouge plus lumineux (pour Lettre de Motivation) */
+    transform: scale(1.1);
 }
 
-/* Responsive Design */
+/* Section Introduction : Alignement de la photo et des boutons */
+.introduction {
+    display: flex;
+    justify-content: space-between; /* Espace entre la photo et les boutons */
+    align-items: center;
+    margin-top: 50px;
+}
+
+.introduction button {
+    width: auto;
+}
+
+/* Responsive Design : Alignement sur mobile */
 @media (max-width: 768px) {
-    .section {
-        padding: 30px 15px;
-        width: 90%;
-    }
-
-    header {
-        padding: 30px 15px;
-    }
-
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    header .profile-pic {
-        width: 150px;
-        height: 150px;
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-
-    .flags {
+    section.introduction {
         flex-direction: column;
         align-items: center;
     }
+
+    button {
+        margin: 10px 0; /* Espacement vertical sur mobile */
+    }
 }
+
