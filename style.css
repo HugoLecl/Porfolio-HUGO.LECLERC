@@ -18,9 +18,11 @@ h1, h2, h3 {
 
 /* En-tête */
 header {
-    background-image: "Decathlonbackround.png"
+    background: linear-gradient(135deg, #0097B2, #1A73E8); /* Dégradé de bleu (peut être modifié selon préférence) */
     color: white;
-    text-align: center;
+    display: flex; /* Flexbox pour aligner le contenu horizontalement */
+    justify-content: space-between; /* Espace entre le texte et la photo */
+    align-items: center; /* Alignement vertical centré */
     padding: 50px 20px;
 }
 
@@ -28,32 +30,8 @@ header {
 header .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Aligner à gauche */
     justify-content: center;
-}
-
-/* Photo de profil avec fond */
-header .profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid white;
-    object-fit: cover;
-    margin-bottom: 20px;
-    background-image: url('Decathlonbackround.png'); /* Image de fond */
-    background-size: cover; /* L'image de fond couvre tout le cercle */
-    background-position: center; /* Centrer l'image de fond */
-    background-repeat: no-repeat; /* Empêcher la répétition de l'image */
-    position: relative; /* Nécessaire pour gérer l'image de fond dans le cercle */
-    z-index: -1; /* Placer l'image en arrière-plan */
-}
-
-/* Par défaut, la photo de profil est dans un cercle */
-header .profile-pic img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 /* Titre principal */
@@ -70,6 +48,22 @@ header p {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-top: 10px;
+}
+
+/* Photo de profil avec fond */
+header .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-left: 20px; /* Espacement entre la photo et le texte */
+    background-image: url('Decathlonbackround.png'); /* Image de fond */
+    background-size: cover; /* L'image de fond couvre tout le cercle */
+    background-position: center; /* Centrer l'image de fond */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'image */
+    position: relative; /* Nécessaire pour gérer l'image de fond dans le cercle */
+    z-index: -1; /* Placer l'image en arrière-plan */
 }
 
 /* Navbar */
