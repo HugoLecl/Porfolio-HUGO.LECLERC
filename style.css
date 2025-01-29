@@ -38,7 +38,7 @@ header {
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 10px;
-    color: white;
+    color: #3643ba; /* Couleur violette */
 }
 
 /* Texte descriptif */
@@ -111,7 +111,7 @@ header {
 }
 
 .skills-grid span {
-    background-color: #0097B2;
+    background-color: #3643ba;  /* Couleur violette */
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -133,7 +133,7 @@ header {
 
 /* Boutons */
 button, a.button {
-    background-color: #36D7B7;  /* Vert clair pour les boutons */
+    background-color: #3643ba;  /* Couleur violette pour les boutons */
     color: white;
     padding: 12px 25px;
     font-size: 16px;
@@ -146,18 +146,18 @@ button, a.button {
 }
 
 button:hover, a.button:hover {
-    background-color: #2d9f7b;  /* Un vert plus foncé au survol */
+    background-color: #2d2d8f;  /* Un violet plus foncé au survol */
     transform: scale(1.1);
 }
 
 /* Forme différente pour "Mon CV" et "Lettre de Motivation" */
 .cv-button, .motivation-button {
-    background-color: #36D7B7;
-    border-radius: 30px;  /* Différente forme pour plus d'originalité */
+    background-color: #3643ba;
+    border-radius: 30px;  /* Forme différente pour plus d'originalité */
 }
 
 .cv-button:hover, .motivation-button:hover {
-    background-color: #2d9f7b; /* Au survol, elles deviennent un peu plus foncées */
+    background-color: #2d2d8f; /* Au survol, elles deviennent un peu plus foncées */
 }
 
 /* Footer */
