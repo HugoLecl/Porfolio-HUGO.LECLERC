@@ -28,3 +28,8 @@ buttons.forEach(button => {
         this.style.backgroundColor = '#0097B2'; // Retour à la couleur initiale
     });
 });
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+
