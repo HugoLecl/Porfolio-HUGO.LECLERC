@@ -21,38 +21,43 @@ h1, h2, h3 {
 header {
     background: linear-gradient(135deg, #0097B2, #1A73E8); /* Dégradé bleu */
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 50px 20px;
-}
-
-header .hero-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;  /* Aligne le texte à gauche et l'image à droite */
     align-items: center;
-    justify-content: center;
 }
 
-header .profile-pic {
+/* Contenu à gauche (nom et description) */
+.header-text {
+    max-width: 600px; /* Limite la largeur du texte */
+}
+
+/* Nom "Hugo Leclerc" */
+.header-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Texte descriptif */
+.header-text p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Photo de profil à droite */
+.profile-pic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: 5px solid white;
     object-fit: cover;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-top: 10px;
+    margin-left: 30px; /* Ajoute un petit espace à gauche de la photo */
 }
 
 /* Navbar */
