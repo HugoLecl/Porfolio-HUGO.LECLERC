@@ -18,7 +18,7 @@ h1, h2, h3 {
 
 /* En-tête */
 header {
-    background: linear-gradient(135deg, #0097B2, #1A73E8); /* Dégradé de bleu (peut être modifié selon préférence) */
+    background-image: linear-gradient(135deg, #0097B2, #1A73E8); /* Dégradé de bleu (peut être modifié selon préférence) */
     color: white;
     text-align: center;
     padding: 50px 20px;
