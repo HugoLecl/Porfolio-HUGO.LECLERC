@@ -33,3 +33,29 @@ function scrollToSection(sectionId) {
     section.scrollIntoView({ behavior: 'smooth' });
 }
 
+// Fonction qui vérifie quelle section est dans la vue et applique les classes correspondantes
+document.addEventListener("scroll", function() {
+    // Récupérer toutes les sections
+    const sections = document.querySelectorAll('.section');
+    let activeSection = null;
+
+    // Vérifier quelle section est visible dans la fenêtre
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            activeSection = section;
+        }
+    });
+
+    // Appliquer le flou aux autres sections et enlever le flou de la section active
+    sections.forEach(section => {
+        if (section !== activeSection) {
+            section.classList.add('blur'); // Ajouter le flou
+            section.classList.remove('active'); // Retirer l'effet de netteté
+        } else {
+            section.classList.remove('blur'); // Enlever le flou
+            section.classList.add('active'); // Appliquer la netteté
+        }
+    });
+});
+
