@@ -1,104 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Hugo Leclerc</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio d'Hugo Leclerc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <img src="photoprofil" alt="Photo de Hugo Leclerc" class="profile-photo">
-            <div class="hero-text">
-                <h1>Hugo Leclerc</h1>
-                <p>20 ans - Étudiant à l'ILEPS - Alternant chez Decathlon</p>
-                <p>Email: <a href="mailto:hugosommerard@gmail.com">hugosommerard@gmail.com</a> | Téléphone: <a href="tel:+0788345315">07 88 34 53 15</a></p>
-            </div>
+
+    <!-- En-tête avec nom et photo -->
+    <header>
+        <div class="header-content">
+            <div class="name">Hugo Leclerc</div>
+            <img src="photoprofil" alt="Photo de Hugo Leclerc" class="profile-pic">
         </div>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="#biographie">Biographie</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#langues">Langues</a></li>
-                <li><a href="#benevolat">Bénévolat</a></li>
-                <li><a href="#formations">Formations</a></li>
-                <li><a href="#interets">Centres d'intérêt</a></li>
-                <li><a href="#personnalite">Ma personnalité</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <section id="biographie" class="section">
-            <h2>Biographie</h2>
-            <p>
-                Actuellement alternant chez Decathlon au poste de vendeur polyvalent, je suis passionné par le sport et le dépassement de soi.
-                J'ai participé à divers projets axés sur l'amélioration du parcours client, l'encartage et l'organisation des rayons.
-                Mon objectif à long terme est de devenir responsable d'un magasin Decathlon après avoir obtenu mon Master.
-            </p>
-        </section>
-        <section id="competences" class="section">
-            <h2>Compétences</h2>
-            <div class="skills-grid">
-                <span>Canva</span>
-                <span>PowerPoint</span>
-                <span>Excel</span>
-                <span>CapCut</span>
-                <span>Brevo</span>
-                <span>Word</span>
-            </div>
-        </section>
-        <section id="langues" class="section">
-            <h2>Langues</h2>
-            <ul class="language-list">
-                <li>Français (langue maternelle)</li>
-                <li>Anglais (B1-B2)</li>
-                <li>Espagnol (Débutant)</li>
-            </ul>
-            <div class="flags">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="Drapeau français">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom_%283-5%29.svg" alt="Drapeau britannique">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Drapeau espagnol">
-            </div>
-        </section>
-        <section id="benevolat" class="section">
-            <h2>Bénévolat</h2>
-            <ul>
-                <li>Enseignement de cours de tennis à des enfants de 6-10 ans (2018-2020).</li>
-                <li>Bénévolat aux Restos du Cœur (2019).</li>
-            </ul>
-        </section>
-        <section id="formations" class="section">
-            <h2>Formations</h2>
-            <ul>
-                <li>Baccalauréat (2020)</li>
-                <li>BAFA (2024)</li>
-                <li>PSC1 (2022)</li>
-                <li>DEUST (2024)</li>
-            </ul>
-        </section>
-        <section id="interets" class="section">
-            <h2>Centres d'intérêt</h2>
-            <ul>
-                <li>Voyages</li>
-                <li>Musculation</li>
-                <li>Musique</li>
-                <li>Montages vidéo</li>
-                <li>Restaurants</li>
-            </ul>
-        </section>
-        <section id="personnalite" class="section">
-            <h2>Ma personnalité</h2>
-            <p>
-                Dynamique, curieux et déterminé, j'aime relever de nouveaux défis et travailler en équipe pour atteindre des objectifs communs.
-                Je valorise l'entraide et le partage de mes connaissances, que ce soit dans un cadre professionnel ou personnel.
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Portfolio - Hugo Leclerc</p>
-    </footer>
+
+    <!-- Section Introduction -->
+    <section class="introduction">
+        <a href="hugoleclerc.pdf" target="_blank">
+            <button class="cv">Télécharger mon CV</button>
+        </a>
+        <p>Étudiant à l'ILEPS - Alternant chez Decathlon</p>
+        <p>Je suis passionné par le sport et le dépassement de soi, actuellement en alternance chez Decathlon. Mon objectif est de devenir responsable de magasin.</p>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="section">
+        <h2>Compétences</h2><br>
+        <p>En tant qu'étudiant en commerce et marketing sportif, j'ai acquis plusieurs compétences pratiques :</p>
+        <ul>
+            <li><strong>Canva</strong></li>
+            <li><strong>PowerPoint</strong></li>
+            <li><strong>Excel</strong></li>
+            <li><strong>CapCut</strong></li>
+            <li><strong>Brevo</strong></li>
+            <li><strong>Word</strong></li>
+        </ul>
+    </section>
+
+    <!-- Section Expériences Professionnelles -->
+    <section id="experience" class="section">
+        <h2>Expériences Professionnelles</h2><br>
+        <p>Voici mes expériences professionnelles dans le domaine du sport et de la vente :</p>
+        <ul>
+            <li>
+                <strong>Alternant Vendeur Polyvalent</strong><br>
+                <em>Decathlon - Cergy</em> <br>
+                <span>2023 - présent</span>
+                <p>Je travaille sur l'amélioration du parcours client, l'organisation des rayons, ainsi que la gestion des stocks. Mon objectif est de contribuer à une expérience client optimale.</p>
+            </li>
+            <li>
+                <strong>Vendeur Polyvalent</strong><br>
+                <em>Decathlon - Rosny sous Bois</em><br>
+                <span>2022 (Stage)</span>
+                <p>Dans ce stage, j'ai conseillé les clients, géré les rayons et participé à l'organisation du magasin, ce qui m'a donné une bonne expérience du commerce en détail.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Section Formation -->
+    <section id="education" class="section">
+        <h2>Formation</h2><br>
+        <p>Ma formation académique m'a permis d'acquérir des compétences solides pour évoluer dans le secteur du sport et de la vente :</p>
+        <ul>
+            <li>
+                <strong>Master (En cours)</strong><br>
+                <em>ILEPS - Cergy</em><br>
+                <span>2023 - présent</span>
+                <p>Formation orientée vers le management du sport, avec un apprentissage pratique et théorique.</p>
+            </li>
+            <li>
+                <strong>Baccalauréat</strong><br>
+                <em>Lycée Charles Peguy - Paris 11ème</em><br>
+                <span>2020</span>
+                <p>J'ai obtenu mon baccalauréat avec mention, ce qui m'a permis de poser les bases de mes compétences en gestion et communication.</p>
+            </li>
+            <li>
+                <strong>BAFA</strong><br>
+                <em>2024</em>
+                <p>Certification pour l'animation et la gestion de groupes dans divers contextes.</p>
+            </li>
+            <li>
+                <strong>PSC1</strong><br>
+                <em>2022</em>
+                <p>Formation aux premiers secours pour garantir la sécurité dans tous les environnements.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Section Langues -->
+    <section id="languages" class="section">
+        <h2>Langues</h2><br>
+        <ul>
+            <li><strong>Français :</strong> Langue maternelle</li>
+            <li><strong>Anglais :</strong> Niveau B1-B2</li>
+            <li><strong>Espagnol :</strong> Débutant</li>
+        </ul>
+    </section>
+
+    <!-- Section Centres d'intérêt -->
+    <section id="interests" class="section">
+        <h2>Centres d'intérêt</h2><br>
+        <p>En dehors de mes études et de mes expériences professionnelles, voici quelques-unes de mes passions :</p>
+        <ul>
+            <li><strong>Voyages</strong></li>
+            <li><strong>Musculation</strong></li>
+            <li><strong>Musique</strong></li>
+            <li><strong>Montages vidéo</strong></li>
+            <li><strong>Restaurants</strong></li>
+        </ul>
+    </section>
+
     <script src="script.js"></script>
 </body>
+
 </html>
+
