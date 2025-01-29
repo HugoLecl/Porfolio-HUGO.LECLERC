@@ -1,40 +1,53 @@
 /* Importation des polices */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:ital,wght@1,600&family=Roboto+Slab:wght@400;700&display=swap');
 
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #F4F9FF; /* Fond bleu clair */
+    color: #333333; /* Texte foncé */
 }
 
-.hero {
-    background: linear-gradient(135deg, #319, #1a73e8);
-    text-align: center;
+header {
+    background: linear-gradient(135deg, #0097B2, #1A73E8); /* Dégradé de bleu */
     color: white;
-    padding: 40px 20px;
+    text-align: center;
+    padding: 50px 20px;
 }
 
-.hero-content {
+header .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.profile-photo {
-    width: 150px;
+header .profile-pic {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 5px solid white;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
-.hero-text h1 {
-    font-size: 2rem;
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
+header p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+/* Navbar */
 .navbar {
-    background: #1a73e8;
+    background-color: #0097B2;
     padding: 10px 0;
 }
 
@@ -47,7 +60,7 @@ body {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .nav-links a {
@@ -60,13 +73,25 @@ body {
     text-decoration: underline;
 }
 
+/* Sections */
 .section {
     padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #0097B2;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Grille de compétences */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -75,13 +100,14 @@ body {
 }
 
 .skills-grid span {
-    background-color: #1a73e8;
+    background-color: #0097B2;
     color: white;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
 }
 
+/* Langues et autres informations */
 .flags {
     display: flex;
     justify-content: center;
@@ -94,10 +120,60 @@ body {
     border-radius: 5px;
 }
 
-footer {
-    background: #1a73e8;
+/* Boutons */
+button, a.button {
+    background-color: #0097B2;
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     margin-top: 20px;
+    text-decoration: none;
 }
+
+button:hover, a.button:hover {
+    background-color: #EF476F;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #0097B2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        padding: 30px 15px;
+        width: 90%;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .flags {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
