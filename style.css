@@ -4,21 +4,21 @@
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #000000; /* Fond noir */
+    color: #ffffff; /* Police blanche */
 }
 
 /* Style pour les titres (compétences, expériences, etc.) */
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif; /* Appliquer Montserrat aux titres */
-    color: #3643ba; /* Couleur personnalisée */
+    color: #4CAF50; /* Couleur verte claire pour les titres */
     text-align: center;
     margin: 20px 0;
 }
 
 /* En-tête */
 header {
-    background: linear-gradient(135deg, #0097B2, #1A73E8); /* Dégradé de bleu */
+    background: linear-gradient(135deg, #0097B2, #1A73E8); /* Dégradé de bleu (peut être modifié selon préférence) */
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -44,6 +44,16 @@ header .profile-pic {
     background-size: cover; /* L'image de fond couvre tout le cercle */
     background-position: center; /* Centrer l'image de fond */
     background-repeat: no-repeat; /* Empêcher la répétition de l'image */
+    position: relative; /* Nécessaire pour gérer l'image de fond dans le cercle */
+    z-index: -1; /* Placer l'image en arrière-plan */
+}
+
+/* Par défaut, la photo de profil est dans un cercle */
+header .profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Titre principal */
@@ -64,7 +74,7 @@ header p {
 
 /* Navbar */
 .navbar {
-    background-color: #0097B2;
+    background-color: #4CAF50; /* Vert clair pour la navbar */
     padding: 10px 0;
 }
 
@@ -96,7 +106,7 @@ header p {
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 1000px;
-    background-color: white;
+    background-color: #222222; /* Fond des sections en gris foncé */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -105,7 +115,7 @@ header p {
 /* Titres des sections */
 .section h2 {
     font-family: 'Playfair Display', serif;
-    color: #0097B2;
+    color: #4CAF50; /* Vert clair pour les titres des sections */
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -119,7 +129,7 @@ header p {
 }
 
 .skills-grid span {
-    background-color: #0097B2;
+    background-color: #4CAF50; /* Vert clair pour les compétences */
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -141,7 +151,7 @@ header p {
 
 /* Boutons */
 button, a.button {
-    background-color: #0097B2;
+    background-color: #4CAF50; /* Vert clair pour les boutons */
     color: white;
     padding: 12px 25px;
     font-size: 16px;
@@ -154,13 +164,13 @@ button, a.button {
 }
 
 button:hover, a.button:hover {
-    background-color: #EF476F;
+    background-color: #66BB6A; /* Vert clair plus lumineux au survol */
     transform: scale(1.1);
 }
 
 /* Footer */
 footer {
-    background-color: #0097B2;
+    background-color: #4CAF50; /* Vert clair pour le footer */
     color: white;
     padding: 20px;
     text-align: center;
