@@ -185,4 +185,16 @@ button.motivation-letter:hover {
         margin: 10px 0; /* Espacement vertical sur mobile */
     }
 }
+/* Flou pour les sections inactives */
+.blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Effet de transition fluide */
+.active {
+    filter: none;
+    transition: filter 0.3s ease-in-out;
+}
+
 
