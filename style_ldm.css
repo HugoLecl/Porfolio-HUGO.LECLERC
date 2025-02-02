@@ -1,0 +1,25 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #6c0b75, #1A73E8);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.pdf-container {
+    width: 80%;
+    height: 80%;
+    border: 5px solid #ffffff; /* Bordure blanche */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Cache tout débordement */
+}
+
+.pdf-frame {
+    width: 100%;
+    height: 100%;
+    border: none; /* Retire la bordure de l'iframe */
+}
