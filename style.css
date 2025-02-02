@@ -1,25 +1,45 @@
-/* Importation des polices */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: #000000;  /* Fond noir */
-    color: #ffffff;  /* Texte blanc */
-    overflow-x: hidden; /* Empêche le débordement horizontal */
+    background: linear-gradient(135deg, #6c0b75, #1A73E8);
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
 /* Style pour les titres (compétences, expériences, etc.) */
-h1, h2, h3 {
+h1, h3 {
     font-family: 'Montserrat', sans-serif; /* Appliquer Montserrat aux titres */
-    color: #3643ba; /* Couleur violette */
+    color: #000000;
     text-align: center;
-    margin: 20px 0;
+    margin-left: 30px; /* Ajoute un petit espace à gauche de la photo */
 }
+
+h2 {
+    font-family: 'Montserrat', sans-serif; /* Appliquer Montserrat aux titres */
+    color: #3643ba;
+}
+
+/* Ajouter une classe pour le flou */
+.blur {
+    filter: blur(5px);
+}
+
+/* Section avec zoom */
+.section:hover {
+    transform: scale(1.1);  /* Agrandit la section */
+    z-index: 10;  /* Met la section au-dessus des autres */
+    transition: transform 0.3s ease, filter 0.3s ease;  /* Transition fluide */
+}
+
 
 /* En-tête */
 header {
-    background: linear-gradient(135deg, #0097B2, #1A73E8); /* Dégradé bleu */
+    background-image: url("Decathlonbackround.png");
+    background-position: center;
+    border: solid;
+    border-bottom: solid 5px black; /*le bas de l'image Decathlon */
     color: white;
     text-align: left;
     padding: 50px 20px;
@@ -28,69 +48,18 @@ header {
     align-items: center;
 }
 
-/* Contenu à gauche (nom et description) */
-.header-text {
-    max-width: 600px; /* Limite la largeur du texte */
-}
-
-/* Nom "Hugo Leclerc" */
-.header-text h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #3643ba; /* Couleur violette */
-}
-
-/* Texte descriptif */
-.header-text p {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-top: 10px;
-    color: white;
-}
-
-/* Photo de profil à droite */
 .profile-pic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 4px solid blue;
+    border: 4px solid transparent; /* le bord de la photo de profil */
     object-fit: cover;
     margin-left: 30px; /* Ajoute un petit espace à gauche de la photo */
 }
 
-/* Navbar */
-.navbar {
-    background-color: black;
-    padding: 10px 0;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin: 0 20px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: underline overline;
-    font-weight: bolder;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
 /* Sections */
 .section {
-    padding: 40px 20px;
+    padding: 20px 10px;
     margin: 20px auto;
     max-width: 1000px;
     background-color: black;  /* Fond noir pour chaque section */
@@ -110,63 +79,61 @@ header {
     margin-top: 20px;
 }
 
-.skills-grid span {
-    background-color: #3643ba;  /* Couleur violette */
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
+.scroll-buttons {
+    margin-top: 220px;
+    margin-right: 50px;
 }
 
-/* Langues et autres informations */
-.flags {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.flags img {
-    width: 50px;
-    border-radius: 5px;
-}
-
-/* Boutons */
-button, a.button {
-    background-color: purple;  /* Couleur violette pour les boutons */
-    color: white;
+/* Style des boutons */
+button, .scroll-buttons button, a.button {
+    background-color: black;  /* Couleur de fond noir */
+    color: white;  /* Texte blanc */
     padding: 12px 25px;
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
     border-radius: 50px; /* Forme arrondie */
     cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: all 0.3s ease;  /* Transition pour un effet fluide */
     margin-top: 20px;
     text-decoration: none;
 }
 
-button:hover, a.button:hover {
-    background-color: #2d2d8f;  /* Un violet plus foncé au survol */
-    transform: scale(1.1);
+button:hover, .scroll-buttons button:hover, button:focus, button:active, a.button:hover, a.button:focus, a.button:active {
+    background-color: white;  /* Couleur de fond blanche au survol et au clic */
+    color: black;  /* Texte noir au survol et au clic */
+    border: 2px solid black; /* Ajoute une bordure noire pour mieux distinguer le bouton */
 }
 
-/* Forme différente pour "Mon CV" et "Lettre de Motivation" */
-.cv-button, .motivation-button {
-    background-color: purple;
-    border-radius: 30px;  /* Forme différente pour plus d'originalité */
+.introduction {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.cv-button:hover, .motivation-button:hover {
-    background-color: black; /* Au survol, elles deviennent un peu plus foncées */
+#languages {
+    position: relative;
 }
 
-/* Footer */
-footer {
-    background-color: #0097B2;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* Masque les drapeaux par défaut */
+.flags {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+.flag {
+    width: 50px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Affiche les drapeaux lors du survol de la section Langues */
+#languages:hover .flags {
+    display: flex;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -196,10 +163,4 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-}
-
-/* Ajout de l'effet de flou */
-.blur-section {
-    filter: blur(5px); /* Applique un flou */
-    transition: filter 0.3s ease;
 }
