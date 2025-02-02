@@ -14,7 +14,7 @@
     <!-- En-tête avec nom et photo -->
     <header>
         <div class="header-content">
-            <div class="name">Hugo Leclerc</div>
+            <div class="name"><h1>Hugo Leclerc</h1></div>
             <img src="Photo de profil.png" alt="Photo de Hugo Leclerc" class="profile-pic">
         </div>
 
@@ -22,18 +22,18 @@
         <div class="scroll-buttons">
             <button onclick="scrollToSection('skills')">Compétences</button>
             <button onclick="scrollToSection('experience')">Expériences Pro</button>
-            <button onclick="scrollToSection('education')">Formation</button>
+            <button onclick="scrollToSection('education')">Formations</button>
             <button onclick="scrollToSection('languages')">Langues</button>
-            <button onclick="scrollToSection('interests')">Centres d'intérêt</button>
+            <button onclick="scrollToSection('interests')">Centres d'intérêts</button>
         </div>
     </header>
 
     <!-- Section Introduction -->
     <section class="introduction">
-        <a href="hugoleclerc.pdf" target="_blank">
+        <a href="cv_hugo_leclerc.pdf">
             <button class="cv">Mon CV</button>
         </a>
-        <a href="lettredemotivation.pdf" target="_blank">
+        <a href="ldm.html">
         <button class="motivation-letter">Lettre de Motivation</button>
     </a>
         <p>Étudiant à l'ILEPS - Alternant chez Decathlon</p>
@@ -41,7 +41,7 @@
     </section>
 
     <!-- Section Compétences -->
-    <section id="skills" class="section">
+    <section id="skills" class="section blur-content">
         <h2>Compétences</h2><br>
         <p>En tant qu'étudiant en commerce et marketing sportif, j'ai acquis plusieurs compétences pratiques :</p>
         <ul>
@@ -55,7 +55,7 @@
     </section>
 
     <!-- Section Expériences Professionnelles -->
-    <section id="experience" class="section">
+    <section id="experience" class="section blur-content">
         <h2>Expériences Professionnelles</h2><br>
         <p>Voici mes expériences professionnelles dans le domaine du sport et de la vente :</p>
         <ul>
@@ -87,7 +87,7 @@
     </section>
 
     <!-- Section Formation -->
-    <section id="education" class="section">
+    <section id="education" class="section blur-content">
         <h2>Formation</h2><br>
         <p>Ma formation académique m'a permis d'acquérir des compétences solides pour évoluer dans le secteur du sport et de la vente :</p>
         <ul>
@@ -117,21 +117,27 @@
     </section>
 
     <!-- Section Langues -->
-    <section id="languages" class="section">
+    <section id="languages" class="section blur-content">
         <h2>Langues</h2><br>
         <ul>
             <li><strong>Français :</strong> Langue maternelle</li>
             <li><strong>Anglais :</strong> Niveau B1-B2</li>
             <li><strong>Espagnol :</strong> Débutant</li>
         </ul>
+        <div class="flags">
+            <img src="drapeau-france.jpg" alt="Drapeau de la France" class="flag">
+            <img src="drapeau-royaume-uni.jpg" alt="Drapeau de l'Angleterre" class="flag">
+            <img src="drapeau-espagne.jpg" alt="Drapeau de l'Espagne" class="flag">
+        </div>
     </section>
+    
 
     <!-- Section Centres d'intérêt -->
-    <section id="interests" class="section">
+    <section id="interests" class="section blur-content">
         <h2>Centres d'intérêt</h2><br>
         <p>En dehors de mes études et de mes expériences professionnelles, voici quelques-unes de mes passions :</p>
         <ul>
-            <p>Les</</p><li><strong>Voyages</strong></li>
+            <li><strong>Les Voyages</strong></li>
             <li><strong>Musculation</strong></li>
             <li><strong>Musique</strong></li>
             <li><strong>Montages vidéo</strong></li>
