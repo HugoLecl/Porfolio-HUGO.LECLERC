@@ -10,7 +10,7 @@ body {
 
 /* Style pour les titres (compétences, expériences, etc.) */
 h1, h3 {
-    font-family: 'Montserrat', sans-serif; /* Appliquer Montserrat aux titres */
+    font-family: 'Oswald', sans-serif; /* Appliquer Montserrat aux titres */
     color: #000000;
     text-align: center;
     margin-left: 30px; /* Ajoute un petit espace à gauche de la photo */
