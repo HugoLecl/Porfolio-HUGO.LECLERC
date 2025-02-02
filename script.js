@@ -1,10 +1,10 @@
 // Affichage d'un message de bienvenue lorsque la page se charge
 document.addEventListener('DOMContentLoaded', function () {
     const welcomeMessage = 'Bienvenue sur mon site ! 😊';
-    alert(welcomeMessage); // Affiche un message d'alerte avec un message de bienvenue
+    alert(welcomeMessage); 
 });
 
-// Ajout d'un effet de survol sur les boutons (légèrement plus large et changement de couleur)
+
 const buttons = document.querySelectorAll('button, a.button');
 buttons.forEach(button => {
     button.addEventListener('mouseover', function() {
