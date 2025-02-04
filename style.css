@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Oswald:wght@400;700&family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
     margin: 0;
     background: linear-gradient(135deg, #6c0b75, #1A73E8);
     color: #ffffff;
     overflow-x: hidden;
 }
 
+/* Titres */
 h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -34,6 +36,7 @@ h2 {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* Header */
 header {
     background-image: url("Decathlonbackround.png");
     background-position: center;
@@ -56,6 +59,7 @@ header {
     margin-left: 30px;
 }
 
+/* Sections */
 .section {
     padding: 20px 10px;
     margin: 20px auto;
@@ -76,6 +80,7 @@ header {
     margin-top: 20px;
 }
 
+/* Boutons */
 .scroll-buttons {
     margin-top: 220px;
     margin-right: 50px;
@@ -100,11 +105,13 @@ button:hover, .scroll-buttons button:hover, button:focus, button:active, a.butto
     border: 2px solid black;
 }
 
+/* Introduction */
 .introduction {
     margin-left: 5%;
     margin-right: 5%;
 }
 
+/* Langues */
 #languages {
     position: relative;
 }
@@ -128,6 +135,7 @@ button:hover, .scroll-buttons button:hover, button:focus, button:active, a.butto
     display: flex;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .section {
         padding: 30px 15px;
@@ -156,4 +164,3 @@ button:hover, .scroll-buttons button:hover, button:focus, button:active, a.butto
         align-items: center;
     }
 }
-
